@@ -17,4 +17,8 @@ let dog = {
     health : 100, 
     attacks : [{heavyAttack:25, name: "Bite"},{lightAttack:20, name: "Tackle"},{smallAtack:5, name: "Scratch" }] 
     }
- 
+
+function attackIt(a, d){
+	d.health -= a.attacks[Math.floor(Math.random()* a.attacks.length)].0;
+  
+}
